@@ -1,0 +1,23 @@
+rabbitmq
+  - messaging broker
+  - client libraries to connect with broker is available in many languages / frameworks
+  
+  
+Based on AMQP 
+
+plugin based architecture to support STOMP & MQTT
+
+plugins
+  - SHOVEL          moving messages from one broker to another
+  - FEDERATION      sharing messages between brokers
+  - MANAGEMENT      monitoring & controlof brokers and cluster of brokers
+  
+  
+  Sending messages
+    1.  Establish connection
+    2.  Ensure the receiving queue is available
+    3.  Sends the message
+    4.  Close the connetion
+    
+  Receivinng messages
+    1.  Receive messages via a callback method 
